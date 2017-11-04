@@ -6,5 +6,7 @@ import com.example.model.CourseModel;
 
 public interface CourseService
 {
-    CourseModel selectCourse (String id);
+    CourseModel selectCourse (String id_course);
+    
+    List<CourseModel> selectAllCourse();
 }
