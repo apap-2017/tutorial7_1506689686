@@ -36,4 +36,13 @@ public class CourseController
             return "not-foundCourse";
         }
     }
+    
+    @RequestMapping("/course/viewall")
+    public String view (Model model)
+    {
+        List<CourseModel> courses = courseDAO.selectAllCourse ();
+        model.addAttribute ("courses", courses);
+
+        return "viewall-course";
+    } 
 }

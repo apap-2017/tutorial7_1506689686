@@ -7,4 +7,5 @@ import com.example.model.CourseModel;
 public interface CourseService
 {
     CourseModel selectCourse (String id);
+    List<CourseModel> selectAllCourse();
 }
