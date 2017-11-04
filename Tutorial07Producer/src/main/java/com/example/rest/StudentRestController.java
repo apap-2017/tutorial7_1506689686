@@ -24,5 +24,11 @@ public class StudentRestController
 		return student;
 	}
 	
+	@Autowired
+	@RequestMapping("/student/viewall")
+	public List<StudentModel> viewAll () {
+			List<StudentModel> students = studentService.selectAllStudents();
+		return students;
+	}
 	
 }
